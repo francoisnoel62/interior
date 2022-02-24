@@ -13,7 +13,7 @@
 
 body {
     background: #181719;
-    padding: 4vh 5vw 1vh 4vw;
+    padding: 4vh 5vw 1vh 5vw;
     min-height: 100vh;
 }
 
@@ -53,7 +53,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 87vh;
+    min-height: 90vh;
 }
 
 .main--content {
@@ -93,14 +93,14 @@ main {
 }
 
 .interior--design {
-    width: 45vw;
+    width: 42vw;
 }
 
 /*THE-DESIGNER*/
 .the--designer {
     background: #181719;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 26vw;
+    width: 24vw;
     position: absolute;
     top: 86%;
     left: 39%;
@@ -149,6 +149,23 @@ main {
 
 footer {
     text-align: center;
+    margin-top: 15vh;
+}
+
+footer > p {
+    font-family: 'Montserrat', serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: #A9A9A9;
+}
+
+footer > p > a {
+    color: #A9A9A9;
+    font-weight: bold;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 600px) {
