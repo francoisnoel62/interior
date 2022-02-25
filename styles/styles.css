@@ -23,6 +23,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 4vh;
 }
 
 .logo {
@@ -57,22 +58,21 @@ main {
 }
 
 .main--content {
-    width: 30%;
+    width: 40%;
 }
 
 .headline {
     font-family: 'Lora', serif;
-    font-size: 48px;
-    line-height: 61px;
+    font-size: 6.5vh;
     margin-bottom: 5vh;
 }
 
 .description {
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 1.7vw;
     margin-bottom: 3vh;
     font-weight: normal;
+    width: 80%;
 }
 .read--more {
     border: none;
@@ -93,7 +93,7 @@ main {
 }
 
 .interior--design {
-    width: 42vw;
+    width: 45vw;
 }
 
 /*THE-DESIGNER*/
@@ -104,6 +104,8 @@ main {
     position: absolute;
     top: 86%;
     left: 39%;
+    padding-left: 1.4rem;
+    padding-top: 0.8rem;
 }
 
 .designer--photo {
@@ -115,8 +117,6 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-left: 0.6rem;
-    padding-top: 0.5rem;
 }
 
 .name--and--lastname {
@@ -139,17 +139,16 @@ main {
 
 .awards > p {
     font-family: 'Lora', serif;
-    font-style: normal;
     font-weight: bold;
-    font-size: 20px;
-    line-height: 31px;
-    width: 70%;
+    font-size: 1.2vw;
+    line-height: 2vw;
+    width: 60%;
     padding: 0.6rem;
 }
 
 footer {
     text-align: center;
-    margin-top: 15vh;
+    margin-top: 11vh;
 }
 
 footer > p {
@@ -168,9 +167,31 @@ footer > p > a:hover {
     text-decoration: underline;
 }
 
+@media screen and (max-width: 800px) {
+    .the--designer {
+        top: 80%;
+        left: 13%;
+        width: 38vw;
+    }
+
+}
+
 @media screen and (max-width: 600px) {
     main {
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .main--content {
+        width: 100%;
+    }
+
+    .main--img {
+        width: 100%;
+    }
+
+    .interior--design {
+        width: 90vw;
     }
 }
