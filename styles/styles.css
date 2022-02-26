@@ -23,7 +23,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 4vh;
+    margin-bottom: 7vh;
 }
 
 .logo {
@@ -38,7 +38,7 @@ header {
 .nav--item {
     font-family: 'Montserrat', sans-serif;
     text-transform: capitalize;
-    font-size: 18px;
+    font-size: 2.5vh;
     margin-left: 6vw;
 }
 
@@ -48,13 +48,21 @@ header {
     text-decoration-thickness: 2.5px;
 }
 
+.nav--item--mobile {
+    display: none;
+}
+
+.nav--item--mobile > i {
+    font-size: 5vw;
+}
+
 /*MAIN*/
 /*main-content*/
 main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 90vh;
+    min-height: 80vh;
 }
 
 .main--content {
@@ -79,7 +87,7 @@ main {
     background: transparent;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 2vh;
     line-height: 22px;
 }
 
@@ -100,7 +108,7 @@ main {
 .the--designer {
     background: #181719;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 24vw;
+    width: 26vw;
     position: absolute;
     top: 86%;
     left: 39%;
@@ -129,7 +137,7 @@ main {
 .job--description {
     margin-left: 1rem;
     margin-top: 0.4rem;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -140,15 +148,15 @@ main {
 .awards > p {
     font-family: 'Lora', serif;
     font-weight: bold;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     line-height: 2vw;
-    width: 60%;
+    width: 75%;
     padding: 0.6rem;
 }
 
 footer {
     text-align: center;
-    margin-top: 11vh;
+    margin-top: 15vh;
 }
 
 footer > p {
@@ -174,9 +182,22 @@ footer > p > a:hover {
         width: 38vw;
     }
 
+    .awards > p {
+        font-size: 2.2vw;
+        line-height: 3vw;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
+    .nav--item {
+        display: none;
+    }
+
+    .nav--item--mobile {
+        display: revert;
+    }
+
     main {
         display: flex;
         flex-direction: column;
@@ -189,9 +210,24 @@ footer > p > a:hover {
 
     .main--img {
         width: 100%;
+        margin-top: 5vh;
+    }
+
+    .description {
+        font-size: 3vw;
+        width: 55%;
     }
 
     .interior--design {
         width: 90vw;
+    }
+
+    .the--designer {
+        width: 75vw;
+    }
+
+    .awards > p {
+        font-size: 4vw;
+        line-height: 6vw;
     }
 }
